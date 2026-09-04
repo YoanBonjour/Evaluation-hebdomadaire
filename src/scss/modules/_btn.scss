@@ -1,6 +1,12 @@
-* {
-  --Primary-900: #000;
-  --Primary-100: #fff;
+:root {
+  --active-primary-900: #000;
+  --active-primary-100: #fff;
+  --hover-primary-900: #343434;
+  --disabled-primary-100: #bbb;
+  --active-secondary-900: #fff;
+  --active-secondary-100: #000;
+  --hover-secondary-500: #b4bbc0;
+  --disabled-secondary-100: #eceeef;
 }
 
 a {
@@ -10,24 +16,53 @@ a {
 button {
   border: none;
   cursor: pointer;
-  display: flex;
 }
 
 .btn {
-  padding: 16px 20px;
+  display: flex;
   justify-content: center;
   align-items: center;
+  padding: 16px 20px;
   border-radius: 20px;
-  background: var(--Primary-900);
-  color: var(--Primary-100);
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
+.btn-container {
+  align-items: center;
+}
+
+.btn.primary {
+  background: var(--active-primary-900);
+  color: var(--active-primary-100);
+}
+
 .btn-small {
   padding: 8px 12px;
   font-size: 0.875rem;
+  border-radius: 12px;
+}
+
+.btn.primary:hover {
+  background: var(--hover-primary-900);
+}
+
+.btn.primary:disabled {
+  background: var(--disabled-primary-100);
+}
+
+.btn.secondary {
+  background: var(--active-secondary-900);
+  color: var(--active-secondary-100);
+}
+
+.btn.secondary:hover {
+  background: var(--hover-secondary-500);
+}
+
+.btn.secondary:disabled {
+  background: var(--disabled-secondary-100);
 }
