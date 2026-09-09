@@ -1,14 +1,3 @@
-:root {
-  --active-primary-900: #000;
-  --active-primary-100: #fff;
-  --hover-primary-900: #343434;
-  --disabled-primary-100: #bbb;
-  --active-secondary-900: #fff;
-  --active-secondary-100: #000;
-  --hover-secondary-500: #b4bbc0;
-  --disabled-secondary-100: #eceeef;
-}
-
 a {
   text-decoration: none;
 }
@@ -65,5 +54,6 @@ button {
 }
 
 .btn.secondary:disabled {
-  background: var(--disabled-secondary-100);
+  background: var(--disabled-secondary-200);
+  color: var(--disabled-secondary-100);
 }
