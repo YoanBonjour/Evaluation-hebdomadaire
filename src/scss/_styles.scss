@@ -1,0 +1,32 @@
+.btn-container {
+  margin: 10px 10px;
+  display: flex;
+  gap: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+p {
+  font-family: Montserrat;
+  font-size: 1rem;
+}
+
+.body-3 {
+  color: var(--primary-600);
+}
